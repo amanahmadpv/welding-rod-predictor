@@ -57,23 +57,34 @@ These features were selected after performing EDA, correlation analysis, and fea
 | `requirements.txt` | Python packages needed to run the app |
 
 
-This app is also deployed online using Streamlit Community Cloud, and can be accessed without any installation.
-https://welding-rod-predictor-h9d25p8ehmz2yw7lc9dsnm.streamlit.app/  - This is the app link
+## 🚀 Try the App (Live)
 
+This app is deployed on **Streamlit Community Cloud** and accessible from any browser without installation:
 
-📊 Why Log Transformation?
-The target variable TOT (Kgs/T) was highly right-skewed with outliers. To improve model performance and generalization, we applied a log1p transformation, and later used np.expm1() to convert predictions back to original scale.
+🔗 **[Open the App Now](https://welding-rod-predictor-h9d25p8ehmz2yw7lc9dsnm.streamlit.app/)**
 
+---
 
-🧠 Impact
-✅ Helps production team estimate welding needs early
-✅ Aids procurement planning and cost control
-✅ Provides data-driven estimates vs gut-based estimates
-✅ Built for actual industrial application with real-world noise and variation
+## 🧪 Why Log Transformation?
 
-✍️ Developed by
-Aman Ahmad P V
-MBA (Data Analytics) — Pondicherry University
-Data Analytics Intern @ Peekay Steel Castings
-GitHub: amanahmadpv
-pvaman7@gmail.com
+The target variable `TOT (Kgs/T)` was **highly right-skewed** and contained outliers. To improve model performance and reduce variance:
+- We applied a **log1p transformation** during training.
+- Predictions are converted back using `np.expm1()` to restore original scale (kg/ton).
+
+---
+
+## 📊 Impact of the Solution
+
+✅ Helps production team estimate welding needs early  
+✅ Aids procurement planning and cost control  
+✅ Provides data-driven forecasts instead of gut-based estimates  
+✅ Built for industrial deployment using real-world production data
+
+---
+
+## ✍️ Developed by
+- Aman Ahmad P V
+- MBA (Data Analytics) — Pondicherry University
+- Data Analytics Intern @ Peekay Steel Castings
+- GitHub: amanahmadpv
+- pvaman7@gmail.com
